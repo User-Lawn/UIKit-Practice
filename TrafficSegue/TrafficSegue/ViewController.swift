@@ -13,7 +13,9 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-
-
+    @IBAction func unwindToRed(_ unwindSegue: UIStoryboardSegue) {
+        let sourceViewController = unwindSegue.source
+        // Use data from the view controller which initiated the unwind segue
+    }
 }
 
